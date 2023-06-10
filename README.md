@@ -22,11 +22,11 @@ Using `ìnspectString.js` explicit your data.
 
 - E.g. your email adress in assets
 ```sh
-node inspectString.js $GCLOUD_PROJECT "My email address is joe@example.com."
+node inspectString.js $GCLOUD_PROJECT "My email address is dev@yahya-abulhaj.dev."
 ```
 - E.g. your phone number(s) in assets
 ```sh
-node inspectString.js $GCLOUD_PROJECT "My phone number is 555-555-5555."
+node inspectString.js $GCLOUD_PROJECT "My phone number is +99999999."
 ```
 
 ### Redact sensitive data from images
@@ -34,20 +34,22 @@ node inspectString.js $GCLOUD_PROJECT "My phone number is 555-555-5555."
 - Give output to the system e.g.
 
 
-![Hi From GCP Code Editor](dlp-input.png)
+![Hi From GCP Code Editor](assets-for-real.png)
 
 
 - from `nodejs-dlp/samples` redact the email address values from the image
 
 ```sh
-node redactImage.js $GCLOUD_PROJECT ~/dlp-input.png "" EMAIL_ADDRESS ~/dlp-redacted.png
+node redactImage.js $GCLOUD_PROJECT ~/assets-for-real.png "" EMAIL_ADDRESS ~/yaya-redacted.png
 ```
 
 We specified EMAIL_ADDRESS as the infotype to redact. 
 
 In the image, you should notice that the email address is no longer visible.
 
-![This is cool!](dlp-redacted.png)
+![This is cool!](yaya-redacted.png)
 
+
+Refer to [real-time censoring](assets/poc/hm-hmm.png).
 
  
