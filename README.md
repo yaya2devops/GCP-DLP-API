@@ -27,9 +27,7 @@ node inspectString.js $GCLOUD_PROJECT "My email address is joe@example.com."
 - E.g. your phone number(s) in assets
 ```sh
 node inspectString.js $GCLOUD_PROJECT "My phone number is 555-555-5555."
-``
-
-`
+```
 
 ### Redact sensitive data from images
 
