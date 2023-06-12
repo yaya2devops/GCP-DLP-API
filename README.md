@@ -20,7 +20,7 @@ npm install mime
 ### Inspect Sensitive information
 Using `ìnspectString.js` explicit your data.
 
-- E.g. your email adress in assets
+- E.g. your email address in assets
 ```sh
 node inspectString.js $GCLOUD_PROJECT "My email address is dev@yahya-abulhaj.dev."
 ```
@@ -31,8 +31,7 @@ node inspectString.js $GCLOUD_PROJECT "My phone number is +99999999."
 
 ### Redact sensitive data from images
 
-- Give output to the system e.g.
-
+- Give input to the system e.g. upload the below asset
 
 ![Hi From GCP Code Editor](assets-for-real.png)
 
@@ -49,7 +48,9 @@ In the image, you should notice that the email address is no longer visible.
 
 ![This is cool!](yaya-redacted.png)
 
-
-Refer to [real-time censoring](assets/poc/hm-hmm.png).
-
+<h2 align="center">
+ 
+ [Real-time Censoring](assets/poc/hm-hmm.png)
+ 
+</h2>
  
